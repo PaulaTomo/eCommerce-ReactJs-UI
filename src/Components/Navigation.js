@@ -1,8 +1,13 @@
 import {Container, Nav, Navbar} from "react-bootstrap";
 import {Link, Outlet} from "react-router-dom";
 import Logo from "../Images/Logo.png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faBagShopping} from "@fortawesome/free-solid-svg-icons";
+
+
 
 const Navigation = () => {
+
     return(
         <>
             <Navbar className = "nav-link text-bg-danger text-uppercase " collapseOnSelect expand="md" variant="dark" >
@@ -12,11 +17,15 @@ const Navigation = () => {
                     </Navbar.Brand>
                     <Navbar.Toggle className="toggle" aria-controls="responsive-navbar-nav"  />
                     <Navbar.Collapse id="responsive-navbar-nav ">
-                        <Nav className="nav-link ms-auto px-5">
+                        <Nav className="nav-link ms-auto px-5 ">
                             <Link className="nav-link text-white " to="/">Home</Link>
                             <Link className="nav-link text-white" to="/newCollection" >New Collection</Link>
-                            <Link className="nav-link text-white" to="/summer" >Summer</Link>
+                            <Link className="nav-link text-white" to="/summerCollection" >Summer</Link>
                             <Link className="nav-link text-white" to="/discount">Discount%</Link>
+                            <Link className="nav-link" to="/cart"><FontAwesomeIcon icon={faBagShopping} beat size="lg" style={{color: "#fafafa",}} />
+                            </Link>
+
+
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

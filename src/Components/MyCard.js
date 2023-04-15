@@ -50,8 +50,7 @@ function MyCard(){
                 </div>
             </div>
         </div>
-      
-    </div>
+          </div>
     )
 }
 export default MyCard;

@@ -6,6 +6,7 @@ import Discount from "./Pages/Discount";
 import NewCollection from "./Pages/NewCollection";
 import NoPage from "./Pages/NoPage";
 import SummerCollection from "./Pages/SummerCollection";
+import Cart from "./Components/Cart";
 
 
 
@@ -20,6 +21,7 @@ function App() {
                   <Route path="newCollection" element={<NewCollection/>} />
                   <Route path="summerCollection" element={<SummerCollection/>} />
                   <Route path="discount" element={<Discount />} />
+                  <Route path="cart" element={<Cart />} />
                   <Route path="*" element={<NoPage />} />
               </Route>
 
