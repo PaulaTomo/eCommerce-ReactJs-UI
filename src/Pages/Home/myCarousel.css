@@ -1,0 +1,25 @@
+.title
+{
+    margin: 50px 0 15px 10px;
+    /*padding:20px*/
+}
+
+.btn{
+    background-color: rebeccapurple;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+.btn:hover{
+    background-color: #3b1b59;
+    color: wheat;
+}
+@media screen and (max-width: 700px){
+    .title{
+        font-size: 25px;
+    }
+    .btn{
+        font-size: 10px;
+    }
+}
