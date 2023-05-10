@@ -1,10 +1,7 @@
 import "../Styles/card.css"
-
 import Card from 'react-bootstrap/Card';
-
-
 import {Link} from "react-router-dom";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+
 
 function MyCard(props) {
     return (
@@ -24,14 +21,12 @@ function MyCard(props) {
     <i className="fa fa-heart" aria-hidden="true"></i>
   </span>
             <div className="colors-dress">
-                <i className="circle favorite-icon-circle bg-danger" />
-                <i className="circle favorite-icon-circle bg-black" />
-                <i className="circle favorite-icon-circle color-red" />
-                <i className="circle favorite-icon-circle color-purple" />
-                <i className="circle favorite-icon-circle color-aqua" />
-                <i className="circle favorite-icon-circle bg-primary" />
-
-
+                <i className="circle favorite-icon-circle bg-danger"/>
+                <i className="circle favorite-icon-circle bg-black"/>
+                <i className="circle favorite-icon-circle color-red"/>
+                <i className="circle favorite-icon-circle color-purple"/>
+                <i className="circle favorite-icon-circle color-aqua"/>
+                <i className="circle favorite-icon-circle bg-primary"/>
 
 
             </div>
