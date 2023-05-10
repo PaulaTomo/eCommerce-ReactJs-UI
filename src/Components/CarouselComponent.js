@@ -1,6 +1,4 @@
 import OwlCarousel from "react-owl-carousel";
-
-import {Link} from "react-router-dom";
 import React from "react";
 
 function CarouselComponent(props){

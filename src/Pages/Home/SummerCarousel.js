@@ -11,8 +11,8 @@ import summerImg7 from "../../Images/SummerCollection/summer7.webp"
 import React from "react";
 import {Link} from "react-router-dom";
 
-function SummerCarousel(){
-    return(
+function SummerCarousel() {
+    return (
         <div>
             <CarouselComponent
                 image1={summerImg1}
@@ -24,11 +24,12 @@ function SummerCarousel(){
                 image7={summerImg7}
             />
             <Link to="summerCollection">
-                <button className="btn">View More</button>
+                <button className="btn btn-carousel">View More</button>
             </Link>
         </div>
 
 
     )
 }
+
 export default SummerCarousel;

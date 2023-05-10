@@ -1,56 +1,45 @@
-
-import NewCollectionOne from "../Images/aqua.webp";
-import NewCollectionTwo from "../Images/NewCollection/newCollection1.webp";
-import NewCollectionThree from "../Images/NewCollection/newCollection3.webp";
-
 import "../Styles/card.css"
-import {Image} from "react-bootstrap";
+
+import Card from 'react-bootstrap/Card';
+
+
 import {Link} from "react-router-dom";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
-function MyCard(){
-    return(
+function MyCard(props) {
+    return (
+        <Card className="card-collection p-0 "
+              style={{width: '18rem'}}>
+            <Link to="/form">
+                <Card.Img variant="top" src={props.imageSrc}
+                          className="img-card"/>
 
-    <div className="container  m-0 ">
-        <h1 className="title-section">New Collection</h1>
-        <div className="row">
-            <div className="col row">
-                <div className="card border-0 " >
-                    <Image className="img-newCollection" src={NewCollectionOne} alt={""}/>
-                        <div className="card-body">
-                            <h5 className="card-title">Rochie de seara</h5>
-                        </div>
-                </div>
+            </Link>
+            <div className="d-inline-flex justify-content-between  p-3">
+                <p className="text-muted">{props.nameDress}</p>
+                <p className="fw-bold price">{props.price + "€"}</p>
+
             </div>
-            <div className="col row">
-                <div className="card border-0">
-                    <Image className="img-newCollection" src={NewCollectionTwo} alt={""}/>
-                    <div className="card-body">
-                            <h5 className="card-title">Rochie de seara</h5>
+            <span className="favorite-icon favorite-icon-circle ">
+    <i className="fa fa-heart" aria-hidden="true"></i>
+  </span>
+            <div className="colors-dress">
+                <i className="circle favorite-icon-circle bg-danger" />
+                <i className="circle favorite-icon-circle bg-black" />
+                <i className="circle favorite-icon-circle color-red" />
+                <i className="circle favorite-icon-circle color-purple" />
+                <i className="circle favorite-icon-circle color-aqua" />
+                <i className="circle favorite-icon-circle bg-primary" />
 
-                        </div>
-                </div>
+
+
+
             </div>
-            <div className="col row">
-                <div className="card border-0">
-                    <Image className="img-newCollection" src={NewCollectionThree} alt={""}/>
+        </Card>
 
-                    <div className="card-body">
-                            <h5 className="card-title">Rochie de seara</h5>
 
-                        </div>
-                </div>
-            </div>
-            <div className="col row">
-                <div className="card border-0" >
-                    <Image className="img-newCollection" src={NewCollectionOne} alt={""}/>
-
-                    <div className="card-body">
-                            <h5 className="card-title">Rochie de seara</h5>
-                        </div>
-                </div>
-            </div>
-        </div>
-          </div>
-    )
+    );
 }
+
+
 export default MyCard;

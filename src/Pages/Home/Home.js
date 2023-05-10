@@ -7,8 +7,8 @@ import NewCollectionCarousel from "./NewCollectionCarousel";
 import Title from "../../Components/Title";
 import React from "react";
 import SummerCarousel from "./SummerCarousel";
-import Discount from "../Discount";
-import DiscountCollection from "./DiscountCollection";
+import DiscountCarousel from "./DiscountCarousel";
+import FormPromo from "../../Components/FormPromo";
 
 function Home() {
     return (
@@ -29,10 +29,11 @@ function Home() {
             <Title title={<h1>New collection</h1>}/>
             <NewCollectionCarousel/>
             <Title title={<h1>Summer collection</h1>}/>
-            <SummerCarousel />
+            <SummerCarousel/>
 
             <Title title={<h1>Discount%</h1>}/>
-            <DiscountCollection/>
+            <DiscountCarousel/>
+            <FormPromo/>
         </>
 
     );
