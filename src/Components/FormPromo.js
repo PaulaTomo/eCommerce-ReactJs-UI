@@ -1,14 +1,15 @@
-import {Button, InputGroup} from "react-bootstrap";
+import {Button, FormControl, InputGroup} from "react-bootstrap";
 import {Form} from "react-bootstrap";
 import Title from "./Title";
 import React from "react";
 import "../Styles/formPromo.css"
+
 function FormPromo(){
     return(
-        <div className="container-fluid p-5 mt-4 bg-light text-center">
-            <Title  title={<h4>Stay connected to our campaigns and promotions</h4>}/>
-            <div className="col">
-            <InputGroup className="input mb-sm-2">
+        <div className="container-fluid-promo p-3 mt-4 bg-light text-center">
+            <Title  title={<h1>Stay connected to our campaigns and promotions</h1>}/>
+            <div className="col-md-5">
+            <InputGroup className="input mb-sm-0">
             <Form.Control
                 placeholder="Enter your email address to receive our newsletter"
                 aria-label="Recipient's username"
@@ -20,6 +21,10 @@ function FormPromo(){
         </InputGroup>
             </div>
         </div>
-    )
+
+
+
+
+)
 }
 export default FormPromo;

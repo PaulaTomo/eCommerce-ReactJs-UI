@@ -10,12 +10,6 @@ h1{
     padding-bottom: 25px;
 }
 
-.img-card {
-
-    transition: transform .3s;
-
-}
-
 .img-card:hover {
     transform: scale(1.1);
 
@@ -73,4 +67,7 @@ h1{
 .color-aqua{
     background-color: aquamarine;
 
+}
+.circle:hover{
+    transform: scale(1.1);
 }

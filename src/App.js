@@ -8,6 +8,7 @@ import NoPage from "./Pages/NoPage";
 import SummerCollection from "./Pages/SummerCollection";
 import Cart from "./Components/Cart";
 import React from "react";
+import DetailsDress from "./Components/DressList";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                         <Route path="newCollection" element={<NewCollection/>}/>
                         <Route path="summerCollection" element={<SummerCollection/>}/>
                         <Route path="discount" element={<Discount/>}/>
+                        <Route path="dresses" element={<DetailsDress/>}/>
                         <Route path="cart" element={<Cart/>}/>
                         <Route path="*" element={<NoPage/>}/>
                     </Route>

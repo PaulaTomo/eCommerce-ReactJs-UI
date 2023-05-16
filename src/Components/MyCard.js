@@ -5,9 +5,10 @@ import {Link} from "react-router-dom";
 
 function MyCard(props) {
     return (
+
         <Card className="card-collection p-0 "
               style={{width: '18rem'}}>
-            <Link to="/form">
+            <Link to="/dresses">
                 <Card.Img variant="top" src={props.imageSrc}
                           className="img-card"/>
 
