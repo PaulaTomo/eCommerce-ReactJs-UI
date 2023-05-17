@@ -13,7 +13,7 @@ function DressList(){
 
     return(
         <div>
-            <h2>Listă Rochii</h2>
+            <h2>Dress</h2>
             <ul>
                 {dresses.map((dresses) => (
                     <li key={dresses.id} onClick={() => setDresses(dresses)}>
