@@ -1,0 +1,32 @@
+.btn-add-to-cart{
+
+    border-radius: 25px;
+    margin-top: 50px;
+}
+.size-list{
+    display:flex;
+margin-top: 15px;
+}
+
+.size{
+
+    align-items: center; /* Aliniază textul vertical în mijloc */
+  justify-content: center; /* Aliniază textul orizontal în mijloc */
+  padding: 5px 10px; /* Adaugă spații în jurul textului */
+  margin-right: 10px; /* Adaugă un spațiu mic între butoane */
+  background-color: #f0f0f0; /* Culorile de fundal */
+  border: 1px solid #ccc; /* Stilul chenarului */
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.card-price{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.card-name-dress{
+    margin-top: 20px;
+}

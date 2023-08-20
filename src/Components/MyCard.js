@@ -8,10 +8,9 @@ function MyCard(props) {
 
         <Card className="card-collection p-0 "
               style={{width: '18rem'}}>
-            <Link to="/dresses">
+                  <Link to={`/dresses/${props.id}`}>
                 <Card.Img variant="top" src={props.imageSrc}
-                          className="img-card"/>
-
+                          className="img-card" />
             </Link>
             <div className="d-inline-flex justify-content-between  p-3">
                 <p className="text-muted">{props.nameDress}</p>
