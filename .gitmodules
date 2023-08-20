@@ -1,0 +1,3 @@
+[submodule "SpringBootApp"]
+	path = SpringBootApp
+	url = https://github.com/PaulaTomo/Shop-online-React-SpringBoot.git
